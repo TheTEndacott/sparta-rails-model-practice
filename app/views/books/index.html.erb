@@ -1,0 +1,6 @@
+<h1>INDEX books</h1>
+<% @books.each do |book| %>
+  <h2><%= book.title %></h2>
+  <h3><%= book.description %></h3>
+  <h3><%= book.page_count %></h3>
+<% end %>
