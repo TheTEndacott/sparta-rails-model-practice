@@ -1,0 +1,18 @@
+<%= link_to 'Home', authors_path %>
+
+<h1>EDIT author</h1>
+<%= form_with(model: @author, local: true) do |form| %>
+  <p>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= form.label :last_name %><br>
+    <%= form.text_area :last_name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

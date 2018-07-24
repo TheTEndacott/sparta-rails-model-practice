@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # get 'authors/index'
   # get "books", to: "books#index"
   # get "books/:id", to: "books#show"
   # get "books/new", to: "books#new"
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
   # delete "books/destroy", to: "books#destroy"
 
   resources :books
+  resources :authors
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,0 +1,5 @@
+<%= link_to 'Home', authors_path %> |
+<%= link_to 'Edit', edit_author_path(@author) %>
+
+<h1><%= @author.first_name %> <%= @author.last_name %></h1>
+<h2><%= @author.books %></h2>
