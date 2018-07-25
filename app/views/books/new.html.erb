@@ -20,6 +20,7 @@
   <p>
     <%= form.label :author %><br>
     <%= collection_select(:book, :author_id, Author.all, :id, :full_name) %>
+    <!-- book is model as defined at head of form, author_id is foreign key, select from all authors, id passes the specific id, name spoofs out the author name to be more user friendly -->
   </p>
 
   <p>

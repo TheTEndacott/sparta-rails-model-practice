@@ -13,7 +13,7 @@ class BooksController < ApplicationController
   def new
     @book = Book.new
     @book.id = ""
-    @authors = Author.all
+    # @authors = Author.all
   end # Close new
 
   def edit
