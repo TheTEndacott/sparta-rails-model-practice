@@ -1,0 +1,14 @@
+<%= link_to 'New', new_book_path %>
+
+<h1>INDEX books</h1>
+<% @books.each do |book| %>
+  <h2><%= book.title %></h2>
+  <h3><%= book.description %></h3>
+  <h3><%= book.page_count %></h3>
+  <h3><%= book.author.full_name %></h3>
+  <%= link_to 'Show', book_path(book) %> |
+  <%= link_to 'Edit', edit_book_path(book) %> |
+  <%= link_to 'Destroy', book_path(book),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+<% end %>
